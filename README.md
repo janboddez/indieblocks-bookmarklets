@@ -1,2 +1,2 @@
-# indieblocks-bookmarklets
+# IndieBlocks Bookmarklets
 Bookmarklets support for IndieBlocks.
