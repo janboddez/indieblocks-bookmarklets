@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/docs/**": true,
+			"**/svn/**": true,
+			"vendor/**": true,
+			".phpunit.result.cache": true,
+		},
+		"files.watcherExclude": {
+			"**/docs/**": true,
+			"**/svn/**": true,
+			"**/vendor/**": true,
+			".phpunit.result.cache": true,
+		}
+	}
+}
