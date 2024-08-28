@@ -40,7 +40,7 @@
 						// .replace( /(?:\r\n|\r|\n)/g, '<br />' )
 						const lines = selectedText.split( /<br ?\/?>/g ).filter( Boolean ); // The `filter()` removes any empty strings.
 						lines.forEach( line => {
-							paras.push( createBlock( 'core/paragraph', { content: escapeHTML( line ) } ) ); // Using `escapeHTML()` from `wp-escape-html` because unline most stuff in React, `content` is not automatically escaped.
+							paras.push( createBlock( 'core/paragraph', { content: escapeHTML( line ) } ) ); // Using `escapeHTML()` from `wp-escape-html` because unlike most stuff in React, `content` is not automatically escaped.
 						} );
 					}
 
@@ -65,7 +65,6 @@
 
 						setTimeout( () => {
 							const blockIds = getBlocks()?.map( block => block.clientId );
-							// console.log( block );
 
 							insertBlock( block );
 
